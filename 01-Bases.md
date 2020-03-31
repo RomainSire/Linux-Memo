@@ -79,7 +79,7 @@ userName@computerName:~$
 - cp : "copy" - copier un fichier / des fichiers / des dossiers
   - cp [fichierACopier] [destinationDeLaCopie/nomDuFichierCopié]  On peut utiliser le chemin relatif ou absolu
   - -R : copier un dossier et ses sous-dossiers
-  - * : le Jocker (ou wildcard) permet de sélectionner tout !
+  - \* : le Jocker (ou wildcard) permet de sélectionner tout !
   - exemple : cp \*.jpg monDossier/  = copie toutes les images jpeg dans monDossier
   
 
