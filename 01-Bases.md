@@ -75,16 +75,29 @@ userName@computerName:~$
   - NB : nom de fichier avec espace : entourer de "guillemets" !
 - mkdir : créer un dossier = fonctionne pareil que "touch"
   - -p [dossier/sousDossier1/sousDossier2] créer les sous-dossiers intermédiaires
-## Copier et déplacer un fichier
+## Copier, déplacer, renommer un fichier
 - cp : "copy" - copier un fichier / des fichiers / des dossiers
   - cp [fichierACopier] [destinationDeLaCopie/nomDuFichierCopié]  On peut utiliser le chemin relatif ou absolu
   - -R : copier un dossier et ses sous-dossiers
   - \* : le Jocker (ou wildcard) permet de sélectionner tout !
   - exemple : cp \*.jpg monDossier/  = copie toutes les images jpeg dans monDossier
-  
-
-
-
-
-
+- mv : "move" - Déplacer et/ou Renommer un fichier ou un dossier
+  - \* : on peut aussi utiliser le jocker
+  - déplacer et renommer en même temps : mv [fichierADéplacer] [monDossier]/[nouveauNom]
+## Supprimer un fichier
+- rm : "remove" - supprimer un fichier / des fichiers / des dossiers / TOUT /!\
+  - rm [fichier1] [fichier2] = suppr plusieurs fichiers
+  - -i : demander une confirmation de suppression: répondre o/n
+  - -f : Forcer la suppression !
+  - -v : "verbose" affiche les détails de suppression (utile si bcp de choses à supprimer)
+  - -r : supprimer un dossier et son contenu (dossiers et fichiers)
+  - \* : EXTREME PRUDENCE si on utilise rm avec \*  = dangereux !  (NE PAS FAIRE : rm -rf /\*)
+## Liens vers des fichiers
+Il existe 2 types de liens :
+- lien physique : permet d'avoir 2 noms de fichiers qui partagent le même contenu = inode (ne fonctionne qu'avec des fichiers, pas des dossiers)
+  - ln : "link" - créer un lien physique
+  - exemple : [fichier1] existe, donc "ln fichier1 fichier2"  ==> 2 noms (fichier1 et fichier2) pour le même contenu
+- lien symbolique : similaire aux "raccourcis" de Windows...
+  - ln -s fichier1 fichier2 : créer un lien symbolique (fichier2) qui pointe donc vers un autre nom de fichier (fichier1)
+  - fonctionne aussi avec les dossiers
 
