@@ -48,10 +48,40 @@ userName@computerName:~$
    - -a : taiille des dossiers ET des fichiers
    - -s : avoir juste la taille du total, sans le détail de chaque dossier
 
-
- 
-
-
+# Manipulation des fichiers
+## Afficher un fichier
+- cat : afficher tout le fichier
+  - -n : afficher le numéro des lignes
+- less : afficher le fichier page par page
+  - [espace] ou [page Down] écran suivant    ==//==  [page Up] ou [b]  écran avant
+  - [entrée] ou [fleche bas] ligne suivante  ==//==  [y] ou [fleche haut] ligne avant
+  - [d] "down" demi-ecran suivant (11 lignes) ==//== [u] "up" demi-écran avant
+  - [q]  quitter
+  - [=] indique le % d'avancement de lecture du fichier
+  - [h] help
+  - [/]+texte : rechercher le texte
+  - [n] : next prochaine occurence de la recherche
+  - [N] : occurence précédente de la recherche
+- head : Afficher le début d'un fichier
+  - -n [nombre] : afficher [nombre] lignes. (exemple : head -n 5 syslog)
+- tail : Afficher la fin d'un fichier
+  - -n [nombre] : afficher [nombre] lignes. (exemple : tail -n 5 syslog)
+  - -f : "follow" suivre la fin du fichier au fur et à mesure de son évolution (chaque secondes)
+  - -f -s [nombre] : pareil, chaque [nombre] secondes
+  - [Ctrl + c] : arrêter le tail
+## Créer un fichier/dossier
+- touch : changer la date d'un fichier, et... s'il n'est pas créé : le créer !!
+  - [nomDuFichier] : paramètre de nom du fichier (plusieurs fichier peuvent être créés en même temps)
+  - NB : nom de fichier avec espace : entourer de "guillemets" !
+- mkdir : créer un dossier = fonctionne pareil que "touch"
+  - -p [dossier/sousDossier1/sousDossier2] créer les sous-dossiers intermédiaires
+## Copier et déplacer un fichier
+- cp : "copy" - copier un fichier / des fichiers / des dossiers
+  - cp [fichierACopier] [destinationDeLaCopie/nomDuFichierCopié]  On peut utiliser le chemin relatif ou absolu
+  - -R : copier un dossier et ses sous-dossiers
+  - * : le Jocker (ou wildcard) permet de sélectionner tout !
+  - exemple : cp \*.jpg monDossier/  = copie toutes les images jpeg dans monDossier
+  
 
 
 
