@@ -1,6 +1,6 @@
 # Utilisateurs et leurs droits
 
-Un super-utilisateur "root" a tous les droits
+Un super-utilisateur "root" a tous les droits  
 D'autres utilisateurs peuvent être créés et regroupés dans des groupes
 
 ## sudo - exécuter une commande en root
@@ -42,11 +42,13 @@ Les droits d'accès sont "codés" avec 5 lettres :
 - r : "read" - lire l'élément
 - w : "write" - modifier/supprimer l'élément
 - x : "eXecute" - exécuter l'élément (pour un exécutéble..)  ou  voir ses sous-dossiers (pour un dossier)  
+
 Les droits sont découpés en fonction des utilisateurs :  
 ![schéma droits d'accès](https://user.oc-static.com/files/92001_93000/92092.png)  
 - 1er triplet : droits du PROPRIETAIRE du fichier
 - 2ème triplet : droits du GROUPE
 - 3ème triplet : droits de tous les autres utilisateurs  
+
 NB : pour modifier les droits d'un fichier, il faut que le fichier nous appartienne  
 NB : dans tous les cas, ROOT a TOUS les droits !  
 
@@ -55,6 +57,7 @@ On attribue un chiffre à chaque droit :
 - r = 4
 - w = 2
 - x = 1
+
 Il faut additionner ces chiffres pour donner un droit.  
 Exemple : droit de lecture (4) et d'écriture (2) = 6  
 Les nombres de base ont été choisis pour que chaque combinaison de triplet ait un seul numéro unique en additionnant.  
@@ -63,6 +66,7 @@ Exemple : 640
 - 6 : droit de lecture et écriture pour le propriétaire
 - 4 : droit de lecture pour le groupe
 - 0 : aucun droit pour les autres  
+
 Autres exemples :   
 777 : droit "open bar" pour tout le monde  
 000 : personne ne peut rien faire
@@ -75,6 +79,7 @@ Lettres disponibles :
 - u = utilisateur propriétaire
 - g = groupe
 - o = other (les autres personnes)  
+
 à cela, il faut rajouter que :
 - \+ = ajouter le droit
 - \- = supprimer le droit
