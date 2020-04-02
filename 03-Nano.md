@@ -19,3 +19,34 @@ En bas de page, on voit plusieurs raccourcis claviers, en tappant Ctrl + une let
   
 On peut donc écrire :  
 nano -miA [nomFichier]
+
+## Configuration de Nano
+Fichier de config situé dans /home/[userName]/.nanorc  
+On peut configurer de prendre en compte les 3 options ci dessus par défaut !  
+en écrivant set ou unset  
+Dans notre cas :
+- set mouse
+- set autoindent
+- set smarthome
+
+Il existe aussi un fichier .nanorc global, pour tous les utilisateurs, situé ici : /etc/nanorc  
+Nb ce fichier n'est modifiable que par root
+
+## Configuration du terminal (tant qu'on est lancés..!)
+De même, il y a un fichier de config personnel situé : /home/[userName]/.bashrc  
+Possibilité de gérer la coloration, et de créer des alias  
+Par exemple on peut créer l'alias
+- alias ll='ls -larth'    pour un ls détaillé
+- alias rm='rm --preserve-root'    pour éviter de supprimer tout le système par erreur..!  
+
+Pour afficher tous les alias, taper "alias" dans le terminal  
+
+Là encore on peut directement éditer le fichier de config global qui est ici : /etc/bash.bashrc
+
+NB : il existe aussi un fichier .profile qui permet de configurer les consoles qui demandent un mot de passe lancées en appuyant sur Ctrl + Alt + F1 - F6. Mais dans tous les cas, .profile reprend les options de console graphique .bashrc.
+
+
+
+
+
+
