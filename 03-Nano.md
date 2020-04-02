@@ -16,5 +16,6 @@ En bas de page, on voit plusieurs raccourcis claviers, en tappant Ctrl + une let
   - nano -m : autorise l'utilisation de la souris
   - nano - i : indentation automatique
   - nano -A : retour intelligent en début de ligne lorsqu'on appuie sur la touche [Origine]  
+  
 On peut donc écrire :  
 nano -miA [nomFichier]
