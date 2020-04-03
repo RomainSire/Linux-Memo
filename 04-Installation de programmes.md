@@ -1,4 +1,4 @@
-# Installer des programmes avec apt-get
+# Installer des paquets avec apt-get
 ## Organisation
 Les programems sont sous forme de paquets tous regroupés dans un depôt (repository)  
 Ce système gère tout seul les dépendances (librairies dont le programme a besoin pour fonctionner)
@@ -23,7 +23,7 @@ Installer un paquet
 Supprimer un paquet
 - sudo apt-get remove [nomPaquet] : désinstalle le paquet
 - sudo apt-get autoremove [nomPaquet] : désinstalle le paquet ET ses dépendances si elles ne sont plus utilisées
-# apt-get upgrade
+## apt-get upgrade
 Mettre à jour tous les paquets installés
 - sudo apt-get upgrade  
 
