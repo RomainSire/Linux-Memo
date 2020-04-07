@@ -7,7 +7,7 @@ Tous les programmes sont regroupés au même endroit sur le même dépôt (repos
 Il y a en fait plusieurs serveurs qui sont des "copies" du même dépot.. On peut utiliser n'importe quel serveur.  
 Par défaut : fr.archive.ubuntu.com  
 Il est possible de modifier ça dans un fichier de config.  
-On peut aussi modifier ça en mode graphique dans "Sources de loogiciels"
+On peut aussi modifier ça en mode graphique dans "Sources de logiciels"
 ## apt-get update
 Mettre à jour le cache des paquets : à faire de temps en temps, ou avant d'installer un paquet  
 - sudo apt-get update
