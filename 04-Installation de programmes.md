@@ -1,6 +1,6 @@
 # Installer des paquets avec apt-get
 ## Organisation
-Les programems sont sous forme de paquets tous regroupés dans un depôt (repository)  
+Les programmes sont sous forme de paquets tous regroupés dans un depôt (repository)  
 Ce système gère tout seul les dépendances (librairies dont le programme a besoin pour fonctionner)
 ## Dépôts
 Tous les programmes sont regroupés au même endroit sur le même dépôt (repository)  
