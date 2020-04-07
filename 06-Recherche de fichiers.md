@@ -41,5 +41,11 @@ Contrairement à locate, find va parcourir le disque dur pour rechercher le fich
   - "\n" : saut de ligne
   - voir le manuel "man find" pour plus d'options
 ### Supprimer les fichiers trouvés
-Attention à ne pas faire de faisse manip !!
+Attention à ne pas faire de fausse manip !!
 - find -name "\*.jpg" -delete : supprime toutes les images du dossier home !
+### Appeler une commande qui effectuera une action sur tous les résultats de recherche
+- find -name "\*.jpg" -exec chmod 600 {} \;  : met un chmod à 600 pour toutes les images de home
+  - commande PAS entre guillements !
+  - {} seront remplacés par les fichiers trouvés
+  - la commande finit obligatoirement par \;
+  
