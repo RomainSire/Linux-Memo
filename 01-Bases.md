@@ -26,7 +26,7 @@ userName@computerName:~$
 # Commandes de bases
  - date : "date" - afficher la date et l'heure
  - history : afficher l'historique des commandes précédentes
- - ls : "list" - lister les dossier et fichiers pent prendre plusieurs paramètres :
+ - ls : "list" - lister les dossier et fichiers peut prendre plusieurs paramètres :
    - [dossier] : liste les dossiers et fichiers dans le [dossier] enfant
    - -a : "all" - afficher aussi les fichiers cachés
    - -F : indique si dossier, fichier, ou raccourci
