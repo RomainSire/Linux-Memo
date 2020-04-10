@@ -1,6 +1,6 @@
 # Recherche de Fichiers
 ## locate : recherche rapide
-- locate [Recherche] : recherche le fichier ou dossier qui contient [Recherche] dans son nom
+- locate [Recherche] : recherche le fichier ou dossier qui contient [Recherche] dans son nom  
 
 Défaut de "locate" : locate ne recherche pas directement sur le disque dur, mais s'appuie sur une base de données de fichiers (mise à jour chaque jour). En conséquence, si un fichier vient juste d'être créé, il ne sera pas encore répertorié dans la base de données, et locate ne le trouvera pas !
 
