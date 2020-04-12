@@ -1,4 +1,4 @@
 # Linux-Memo
-Memo for GNU/Lunix
+Memo for GNU/Linux
 
 in French
