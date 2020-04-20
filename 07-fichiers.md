@@ -33,8 +33,25 @@ Mais ça sert aussi à compter le nombre de lignes ou compter le nombre de carac
 - wc -m : compter les caractères
 
 ## UNIQ : supprimer les doublons
+ATTENTION, il faut l'utiliser sur un fichier déjà TRIÉ !
+- uniq monFichier : Supprimer les lignes identiques et affiche le résultat dans le terminal
+- uniq monFichier nouveauFichier : écrit le résultat dans un nouveaufichier plutôt que dans le terminal
+- uniq -c monFichier : affiche le nombre d'occurences avant les lignes
+- uniq -d monFichier : affiche uniquement les lignes en doublon
 
+## CUT : couper une partie du fichier
+Coupe une partie de chaque ligne d'un fichier.  
+### Couper selon le nombre de caractères
+Attention, ça se base sur le nombre d'octet, et pas sur le nombre de caractère, donc bugs avec les accents et caractères spéciaux.
+- cut -c 2-5 monFichier : conserve les caractères 2 à 5 de chaque ligne
+- cut -c -3 monFichier : conserve du 1er au 3ème caractère
+- cut -c 3- monFichier : conserve du 3ème caractère à la fin
+### Couper selon un délimiteur
+- \-d : indiquer le délimiteur
+- \-f : indiquer le numéro du champ à couper (= la colonne à conserver)  
 
-
+Exemple d'un fichier csv (donc avec les colonnes séparées par des virgules) 
+- cut -d , -f 1 notes.csv : affiche la première colonne, avant la virgule de séparation
+- cut -d , -f 1,3 notes.csv : affiche la 1ere et la 3eme colonne.
 
 
