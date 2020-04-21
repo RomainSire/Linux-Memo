@@ -27,4 +27,25 @@ Syntaxe :
 
 ![redirection des erreurs](https://user.oc-static.com/files/137001_138000/137859.png "redirection des erreurs")
 
+## Lire depuis un fichier ou depuis le clavier : < et <<
+### Lire depuis un fichier : <
+- [commande] < fichierD'Entrée : la commande reçoit le contenu du fichier d'entrée
+### Lire depuis le clavier : <<
+- [commande] << MOTCLÉSTOP : la commande reçoit le contenu envoyé par le clavier, jusqu'à ce que le mot clé stop soit tapé.  
+
+Exemple :  
+- sort -n << FIN : puis il faut renseigner une série de nombres, à la fin écrire FIN, puis la commande va pouvoir trier les nombres qu'on a rentré.  
+
+NB : on peut bien sûr combiner les "<<" avec les ">>" et autres vus précédemments pour enregistrer les sorties dans des fichiers
+
+![Lire depuis un fichier ou depuis le clavier](https://user.oc-static.com/files/138001_139000/138421.png "Lire depuis un fichier ou depuis le clavier")
+
+
+
+
+
+
+
+
+
 
