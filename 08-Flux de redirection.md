@@ -1,2 +1,8 @@
 # Les flux de redirection
-Principe : ne pas afficher le résultat d'une commande dans le tertminal, mais l'afficher dans un fichier ou en entrée d'une autre commande
+Principe : rediriger le résultat d'une commande dans un fichier plutot que l'afficher dans le terminal, OU chaîner les commandes.
+
+## Rediriger le résultat dans un fichier : > et >>
+- [Commande] > nouveauFichier : le caracrère ">" permet d'enregistrer le résultat de la commande vers un nouveau fichier. Attention, si le fichier existe déjà, il sera écrasé !
+- Il est possible de rediriger ves un dossier "poubelle" si on ne veut ni voir, ni sauvegarder le résultat d'une commande : [commande] > /dev/null
+- [commande] >> fichier : le ">>" permet d'enregistrer le résultat À LA FIN d'un fichier existant. Le fichier est créé s'il n'existe pas.
+
