@@ -41,9 +41,14 @@ NB : on peut bien sûr combiner les "<<" avec les ">>" et autres vus précédemm
 ![Lire depuis un fichier ou depuis le clavier](https://user.oc-static.com/files/138001_139000/138421.png "Lire depuis un fichier ou depuis le clavier")
 
 
+## Chainer les commandes : |
+- [commande 1] | [commande 2] : la commande 1 est exécutée, ses sorties ne sont pas affichées, mais envoyées comme entrée à la commande 2. Peut se faire autant de fois que voulu.
+- exemple : cut -d , -f 1 notes.csv | sort : sélectionne la 1ere colonne d'un fichier csv avec le cut, puis ordonne alphabétiquement cette liste avec le sort.
+- [commande 1] | [commande 2] > [fichierResultat] : idem que précédemment, et en plus enregistre la sortie dans un fichier !
+- exemple 2 : du | sort -nr | head -n 10 : permet d'afficher la taille de tous les sous-dossiers, puis de les ordonner de manière décroissante, puis de n'afficher que les 10 premiers (= les 10 plus gros)
 
 
-
+![chainer les commandes](https://user.oc-static.com/files/138001_139000/138430.png "Chainer les commandes")
 
 
 
