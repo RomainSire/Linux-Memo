@@ -20,3 +20,27 @@ Affiche différentes choses :
   - WHAT : la commande exécutée en ce moment
   
 ## Lister les processus : ps & top
+### ps : liste statique et complète
+Quelques valeurs affichées suite à la commande ps :
+  - PID : numéro d'identification du processus
+  - TTY : nom de la console
+  - TIME : durée d'execution
+  - CMD : programme qui a généré ce processus  
+  
+La commande ps a beaucoup d'options possibles! cf. manuel. Les plus utiles :
+- ps -ef : lister tous les processus de tous les utilisateurs
+- ps -ejH : afficher les processus en arbre (car certains processus sont les enfants d'autres processus)
+- ps -u [USER] : lister les processus lancés par un utilisateur en particulier
+
+### top : liste dynamique et partielle
+top n'affiche que les premiers processus et est raffraichit en temps réel, habituellement trié par le % d'utilisation du CPU.  
+Touches raccourcies :
+- q : quitter
+- h : help
+- B : mettre en gras
+- f : ajoute ou supprime des colonnes
+- F : change la colonne de tri
+- u : filtre selon l'utilisateur
+- k : kill un processus
+- s : change l'intervalle de mise à jour
+
