@@ -47,4 +47,11 @@ Touches raccourcies :
 ## arrêter un processus : ctrl+c & kill
 ctrl+c : en console, permet d'arrêter une commande trop longue ou sans fin qui est en train d'être exécutée dans la console.  
 kill : Pour les autres processus exécutés en background, il faut récupérer son PID avec la commande ps ou top  
-- kill [N° PID] [N° PID] : arrêter les processus identifiés pas les PID saisis
+- kill [N° PID] [N° PID] : arrêter les processus identifiés pas les PID saisis (possible de kill plusieurs processus en même temps)
+- kill -9 [n° PID] : arrêt BOURRIN du processus identifié par le n° de PID saisi
+- killall [nomProcessus] : arrête tous les processus identifiés par leur NOM (il peut y avoir plusieurs processus avec le même nom. ex: chaque onglet de Firefox...)
+
+## Arrêter et redémarrer l'ordinateur : halt & reboot
+- sudo halt : arrêter l'ordi
+- sudo reboot : redémarrer l'ordi
+- sudo shutdown [option] : redémarre, halt, ou arrête l'ordi, selon des options. voir manuel
