@@ -44,3 +44,7 @@ Touches raccourcies :
 - k : kill un processus
 - s : change l'intervalle de mise à jour
 
+## arrêter un processus : ctrl+c & kill
+ctrl+c : en console, permet d'arrêter une commande trop longue ou sans fin qui est en train d'être exécutée dans la console.  
+kill : Pour les autres processus exécutés en background, il faut récupérer son PID avec la commande ps ou top  
+- kill [N° PID] [N° PID] : arrêter les processus identifiés pas les PID saisis
