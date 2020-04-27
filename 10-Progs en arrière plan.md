@@ -23,3 +23,29 @@
   
 ![arrière plan](https://user.oc-static.com/files/141001_142000/141442.png "arrière plan")
 
+## Emuler d'autres consoles : screen
+la commande screen n'est pas installée par défaut, il faut donc l'installer :  
+sudo apt-get install screen  
+Ensuite, en lançant "screen" une nouvelle console est émulée au sein de notre console ! il est possible de quitter l'émulation normalement en tappant ctrl+D ou exit, on retournera alors dans la "vraie" console  
+Dans screen :
+- ctrl+a puis ? : lance l'aide pour avoir tous les raccourcis activables suite à un ctrl+a (NB : dans l'aide "^" est en fait "ctrl")
+- ctrl+a puis c : crée une nouvelle fenetre
+- ctrl+a puis w : affiche en bas la liste des fenetres ouvertes ("\*" sur la fentres active)
+- ctrl+a puis A : renommer la fenetre actuelle
+- ctrl+a puis n : aller à la fenetre suivante
+- ctrl+a puis p : aller à la fenetre précédente
+- ctrl+a puis ctrl+a : aller à la dernière fenetre utilisée
+- ctrl+a puis chiffre 1 à 9 : aller à la fenetre n°x
+- ctrl+a puis " : choisir la fenetre dans laquelle on veut aller (cette commande est TOP!)
+- ctrl+a puis k : KILL la fenetre actuelle
+- SPLIT de fenetre :
+  - ctrl+a puis S : (S maj) coupe la fenetre en 2 consoles (ou plus si effectué plusieurs fois)
+  - ctrl+a puis Tab : pour passer d'une fenetre à l'autre
+  - sur une fenetre vide : ctrl+a puis c : nouveau terminal
+  - sur une fenetre vide : ctrl+a puis " : choisir quelle fenetre afficher
+  - ctrl+a puis X : (X maj) ferme une fenetre splitée
+- ctrl+a puis d : détacher screen : càd envoyer screen en arrière plan et revenir à la console non émulée
+  - screen -r : revenir à la console émulée au même endroit ou on l'avait laissée, même si on a fermé la console non émulée !
+  - il est possible de lancer une nouvelle émulation avec seulement screen. Dans ce cas, il faudra préciser le numéro du screen en faisant : screen -r [numéro]
+  - screen -ls : affiche la liste des screens actuellement lancés
+  
