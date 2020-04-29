@@ -68,11 +68,11 @@ Exemples :
 - 0 0 * * 1 commande : exécute la commande tous les lundis à minuit
 - 0 4 1 * * commande : exécuter la commande tous les 1er du mois à 4h
 - 0 * 4 12 * commande : exécute la commande toutes les heures les 4 décembres
-- * * * * * commande : exécute la commande toutes les minutes
+- \* * * * * commande : exécute la commande toutes les minutes
 
 Les différentes valeurs possibles :
 - 3 : un nombre : exécuté lorsque le champ prend la valeur 3
-- * : exécuter tout le temps
+- \* : exécuter tout le temps
 - 3,5,8 : sans virgule : exécuté lorsque le champ prend la valeur 3, 5, ou 8
 - 3-7 : exécuté pour toutes les valeurs entre 3 et 7
 - \*/3 : exécuté pour tous les multiples de 3 (0, 3, 6, 9, 12..)
