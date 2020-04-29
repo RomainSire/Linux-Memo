@@ -35,3 +35,45 @@ Exécuter aprèsun certain délai :
 Lister et supprimer les taches en attente:
 - atq : liste les jobs en attente, avecleur numéro, et la date prévue d'exécution
 - atrm [numéroJob] : supprimer la tâche programmée (identifiée par son numéro)
+
+
+## Faire une pause : sleep
+- commande1; commande2 : séparé par ";" : exécute 2 commandes à la suite
+- commande1 && commande2 : séparé par "&&" : pareil, mais exécute la 2eme commande seulement s'il n'y a pas eu d'erreur lors de la 1ere commande
+- commande1; sleep 10; commande 2 : "sleep n" permet de faire une "pause" de n secondes entre 2 commandes
+- possible de changer l'unité :
+  - sleep 1m : 1 minute
+  - sleep 1h : 1 heure
+  - sleep 1d : 1 jour
+
+## exécuter une commande régulièrement : crontab
+crontab = liste des programmes planifiés (exécutés régulièrement). C'est en fait un fichier à modifier
+- crontab -e : modifier la crontab
+- crontab -l : afficher la crontab actuelle
+- crontab -r : supprimer la crontab (!! immédiat, sans confirmation)
+
+Lorsqu'on édite le crontab, il faut indiquer :
+- m : minute (0-59)
+- h : heure (0-23)
+- dom : day of month (1-31)
+- mon : month (1-12)
+- dow : day of week (0-6, 0 est le dimanche)
+- command : commande à exécuter
+- les chiffres seront séparés par un espace, et pourront être remplacés par "\*" qui signifie "tous les nombres sont valables"
+- Important: pour les chemins d'accès à un fichier/dossier, toujours les écrire en ABSOLU (càd, le chemin commence par la racine "/")
+
+Exemples :
+- 47 15 * * * touch /home/toto/monFichier : crée un monFichier dans le home de toto tous les jours à 15h47
+- 47 * * * * commande : exécute la commande à 47min de chaque heure
+- 0 0 * * 1 commande : exécute la commande tous les lundis à minuit
+- 0 4 1 * * commande : exécuter la commande tous les 1er du mois à 4h
+- 0 * 4 12 * commande : exécute la commande toutes les heures les 4 décembres
+- * * * * * commande : exécute la commande toutes les minutes
+
+Les différentes valeurs possibles :
+- 3 : un nombre : exécuté lorsque le champ prend la valeur 3
+- * : exécuter tout le temps
+- 3,5,8 : sans virgule : exécuté lorsque le champ prend la valeur 3, 5, ou 8
+- 3-7 : exécuté pour toutes les valeurs entre 3 et 7
+- \*/3 : exécuté pour tous les multiples de 3 (0, 3, 6, 9, 12..)
+
