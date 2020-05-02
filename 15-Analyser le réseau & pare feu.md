@@ -62,7 +62,7 @@ Principe d'un pare feu : bloquer tous les ports (=les portes!) et en ouvris seul
   - -F chain : vide toutes les règles de la chain indiquée
   - -P chain regle : modifie la règle par défaut pour lachain. Cela permet de dire, par exemple, que par défaut tous les ports sont fermés, sauf ceux que l'on a indiqués dans les règles.
 - Exemples :
-  - # iptables -A INPUT -p tcp --dport ssh -j ACCEPT : accepte des données tcp sur le port ssh
+  - iptables -A INPUT -p tcp --dport ssh -j ACCEPT : accepte des données tcp sur le port ssh
 
 [Plus d'infos sur OpenClassrooms](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/42264-analyser-le-reseau-et-filtrer-le-trafic-avec-un-pare-feu#/id/r-2283535)
 
