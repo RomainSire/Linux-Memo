@@ -70,18 +70,18 @@ fi
 ## Le case (switch case en JS)
 ```bash
 case $variable in
-        "valeur1")
-              # instructions si la variable est égale à la valeur1
-              ;;
-        "valeur2" | "valeur3")
-              # instructions si la variable est égale à la valeur2 ou à la valeur3
-              ;;
-        "C*")
-              # instructions si la variable commence par un "C" (l'étoile * est le jocker en bash..)
-              ;;
-        *)
-              # instructions exécutées dans tous les autres cas (équivalent du else)
-              ;;
+    "valeur1")
+        # instructions si la variable est égale à la valeur1
+        ;;
+    "valeur2" | "valeur3")
+        # instructions si la variable est égale à la valeur2 ou à la valeur3
+        ;;
+    "C*")
+        # instructions si la variable commence par un "C" (l'étoile * est le jocker en bash..)
+        ;;
+    *)
+        # instructions exécutées dans tous les autres cas (équivalent du else)
+        ;;
 esac
 ```
 
