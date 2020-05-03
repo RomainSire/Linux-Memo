@@ -12,7 +12,6 @@ NB : il existe le mot clé "until" qui fonctionne comme "while", mais qui foncti
 
 ## For : boucle sur une liste de valeur
 Attention : fonctionnement différent que pour les autres langages de prog, ça correspond plutot à un foreach en PHP
-
 ```bash
 for variable in 'val1' 'val2' 'val3'
 do
@@ -25,5 +24,14 @@ Exemple : renommer tous les fichiers du dossier
 for fichier in `ls`
 do
     mv $fichier $fichier-old
+done
+```
+
+Pour avoir une boucle FOR plus classique :
+```bash
+#!/bin/bash
+for i in `seq 1 10`;
+do
+        echo $i
 done
 ```
